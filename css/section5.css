@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+ul,li{
+  list-style: none;
+}
+.section5{
+  width: 100%;
+  height: 100%;
+  background: url(../img/5.png) no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+.img5{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  margin-left: -50%;
+  margin-top: -50%;
+  animation: big 1s linear infinite alternate;
+}
+.backIndex{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.7rem;
+  margin-left: -20%;
+  animation: big 1s linear infinite alternate;
+}

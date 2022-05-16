@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+ul,li{
+  list-style: none;
+}
+.sun{
+  position: absolute;
+  left: -1.2rem;
+  top: -1.1rem;
+  animation: big 1s linear infinite alternate;
+}
+.section{
+  width: 100%;
+  height: 100%;
+  background: url(../img/firstBg.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+}
+.zhezhao{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(255, 255,255,0.8);
+  z-index: 9;
+  display: block;
+}
+.zhezhao>.father{
+  width: 5rem;
+  height:0.2rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0.2rem;
+  background-color: darkgreen;
+}
+.zhezhao>.son{
+  width: 1rem;
+  height:0.2rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0.2rem;
+  background-color: darkorange;
+  animation: left 2s forwards;
+}
+.zhezhao>span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 0.24rem;
+  color: #fff;
+  z-index: 3;
+  display: block;
+}
+.music{
+  position: absolute;
+  right: 0.45rem;
+  top: 0.38rem;
+}
+.zhuan{
+  animation: zhuan 1.5s linear infinite;
+}
+.ball{
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem;
+  animation: yi 1.5s linear infinite alternate;
+}
+.guanyu{
+  position: absolute;
+  left: 50%;
+  bottom: 0.75rem;
+  margin-left: -20%;
+  animation: big 1s linear infinite alternate;
+}
+@keyframes big{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.3);
+  }
+}
+@keyframes zhuan{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes yi{
+  from{
+    left: 1rem;
+    transform: rotate(0deg);
+  }
+  to{
+    left: 6rem;
+    transform: rotate(360deg);
+  }
+}
+@keyframes left{
+  from{
+    width: 1rem;
+  }
+  to{
+    width: 5rem;
+  }
+}

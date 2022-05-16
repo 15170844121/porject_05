@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+ul,li{
+  list-style: none;
+}
+.section2{
+  width: 100%;
+  height: 100%;
+  background: url(../img/third.png) no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+.back{
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+.all{
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.5rem;
+  font-size: 0.36rem;
+  color: #fff;
+  font-weight: 600;
+}
+.all>span{
+  margin-left: 0.1rem;
+}
+.all>span:nth-of-type(1){
+  animation: dong 0.5s linear infinite alternate;
+}
+.all>span:nth-of-type(2){
+  animation: dong 0.5s linear 0.1s infinite alternate;
+}
+.all>span:nth-of-type(3){
+  animation: dong 0.5s linear 0.2s infinite alternate;
+}
+.all>span:nth-of-type(4){
+  animation: dong 0.5s linear 0.3s infinite alternate;
+}
+.all>span:nth-of-type(5){
+  animation: dong 0.5s linear 0.4s infinite alternate;
+}
+.all>span:nth-of-type(6){
+  animation: dong 0.5s linear 0.5s infinite alternate;
+}
+.all>span:nth-of-type(7){
+  animation: dong 0.5s linear 0.6s infinite alternate;
+}
+
+.test{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.7rem;
+  margin-left: -20%;
+  animation: big 1s linear infinite alternate;
+}
+
+@keyframes dong{
+  from{
+    transform: translateY(0.2rem);
+  }
+  from{
+    transform: translateY(-0.2rem);
+  }
+}

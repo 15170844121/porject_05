@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 移动端的适配 -->
+  <script type="text/javascript">
+    let scale = 1 / devicePixelRatio
+    let text = `<meta name="viewport" content="width=device-width,initial-scale=${scale},minimum-scale=${scale},maximum-scale=${scale},user-scalable=${scale}" />`
+    document.write(text)
+    document.documentElement.style.fontSize = window.innerWidth / 7.5 + 'px'
+    window.onresize = function () {
+      window.location.reload()
+    }
+  </script>
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/section1.css">
+  <link rel="stylesheet" href="./css/section2.css">
+  <link rel="stylesheet" href="./css/section3.css">
+  <link rel="stylesheet" href="./css/section4.css">
+  <link rel="stylesheet" href="./css/section5.css">
+</head>
+
+<body>
+  <audio src="./media/背景音乐.mp3" autoplay></audio>
+  <img src="./img/sun.png" alt="" class="sun">
+  <!-- 第一屏 start  -->
+  <div class="section">
+    <div class="zhezhao">
+      <div class="father"></div>
+      <div class="son"></div>
+      <span>0%</span>
+    </div>
+    <img src="./img/music.png" alt="" class="music">
+    <img src="./img/ball.png" alt="" class="ball">
+    <img src="./img/button.png" alt="" class="guanyu">
+  </div>
+  <!-- 第一屏 end  -->
+  <!-- 第二屏 start  -->
+  <div class="section2">
+    <img src="./img/back.png" alt="" class="back">
+    <div class="all">
+      <span>什</span>
+      <span>么</span>
+      <span>是</span>
+      <span>亚</span>
+      <span>健</span>
+      <span>康</span>
+      <span>？</span>
+    </div>
+    <img src="./img/test.png" alt="" class="test">
+  </div>
+  <!-- 第二屏 end  -->
+  <!-- 第三屏 start  -->
+  <div class="section3">
+    <div class="all2">
+      <span>亚</span>
+      <span>健</span>
+      <span>康</span>
+      <span>测</span>
+      <span>试</span>
+      <span>题</span>
+    </div>
+    <ul class="and">
+      <li><img src="./img/img2.png" alt=""><span>A</span><i>经常感冒</i></li>
+      <li><img src="./img/img2.png" alt=""><span>B</span><i>失眠多梦</i></li>
+      <li><img src="./img/img2.png" alt=""><span>C</span><i>精神压力大</i></li>
+      <li><img src="./img/img2.png" alt=""><span>D</span><i>注意力不集中</i></li>
+      <li><img src="./img/img2.png" alt=""><span>E</span><i>记忆力下降</i></li>
+      <li><img src="./img/img2.png" alt=""><span>F</span><i>焦躁不安</i></li>
+      <li><img src="./img/img2.png" alt=""><span>G</span><i>恐惧胆怯</i></li>
+      <li><img src="./img/img2.png" alt=""><span>H</span><i>人际关系紧张</i></li>
+      <li><img src="./img/img2.png" alt=""><span>I</span><i>睡眠紊乱</i></li>
+      <li><img src="./img/img2.png" alt=""><span>J</span><i>腰酸背疼</i></li>
+    </ul>
+    <img src="./img/back.png" alt="" class="back">
+    <img src="./img/sendTest.png" alt="" class="tijiao">
+  </div>
+  <!-- 第三屏 end  -->
+  <!-- 第四屏 start  -->
+  <div class="section4">
+    <span class="span">2</span>
+    <div class="all">
+      <span>亚</span>
+      <span>健</span>
+      <span>康</span>
+      <span>测</span>
+      <span>试</span>
+      <span>结</span>
+      <span>果</span>
+    </div>
+    <ol class="ol">
+      <li><img src="./img/whiteStar.png" alt="" class=""></li>
+      <li><img src="./img/whiteStar.png" alt="" class=""></li>
+      <li><img src="./img/whiteStar.png" alt="" class=""></li>
+      <li><img src="./img/whiteStar.png" alt="" class=""></li>
+      <li><img src="./img/halfStar.png" alt="" class=""></li>
+      <li><img src="./img/whiteStar.png" alt="" class=""></li>
+    </ol>
+    <ul class="and2">
+      <!-- <li>注意力不集中</li> -->
+    </ul>
+    <img src="./img/back.png" alt="" class="back">
+    <img src="./img/more.png" alt="" class="more">
+  </div>
+  <!-- 第四屏 end  -->
+  <!-- 第五屏 start  -->
+  <div class="section5">
+    <img src="./img/img5.png" alt="" class="img5">
+    <img src="./img/backIndex.png" alt="" class="more">
+  </div>
+  <!-- 第五屏 end  -->
+</body>
+
+</html>
